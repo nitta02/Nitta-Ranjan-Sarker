@@ -61,6 +61,7 @@ a.btn-cta-primary,
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 5px;
 }
 
 a.btn-cta-primary:hover,
