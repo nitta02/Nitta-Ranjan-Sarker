@@ -1,7 +1,7 @@
 # Hi, I'm Nitta Ranjan Sarker! 👋
 
 
-## Github Profile Sections
+### Github Profile Sections
 - 🔭 I’m currently working on [Profile-O](https://github.com/nitta02/profile_app)
 
 - 🌱 I’m currently learning **Flutter, Kotlin**
