@@ -1,607 +1,74 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-
 <head>
-    <title>NITTA RANJAN SARKER</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="Responsive HTML5 Website landing Page for Developers"> -->
-    <!-- <meta name="author" content="3rd Wave Media"> -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    <title>Portfolio Under Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif] -->
+        .welcome {
+            font-size: 3rem;
+            font-weight: 600;
+            animation: slideIn 1.5s ease-out;
+        }
 
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .construction {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeBlink 2s infinite alternate;
+        }
+
+        @keyframes fadeBlink {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.8rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #00e6e6;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container"><img class="profile-image img-responsive pull-left" src="assets/images/p2.jpg" alt=""
-                style="width: 150px; height: auto;" />
-
-            <div class="profile-content pull-left">
-                <h1 class="name">NITTA RANJAN SARKER</h1>
-                <h2 class="desc">SOFTWARE ENGINEER & UI/UX DESIGNER</h2>
-                <ul class="social list-inline">
-                    <li><a href="https://www.linkedin.com/in/nitta-ranjan/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/nitta02"><i class="fa fa-github-alt"></i></a></li>
-                    <!-- <li><a href="https://github.com/nitta02"><i class="fa fa-dribbble"></i></a></li>                -->
-                    <li><a href="https://www.behance.net/nittarsarker02"><i class="fa fa-behance"></i></a></li>
-
-                </ul>
-            </div>
-            <!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:nittaranjantanmoy23@gmail.com" target="_blank"><i
-                    class="fa fa-envelope-o"></i> Contact
-                Me</a>
-
-            <a class="btn btn-cta-primary pull-right" href="docs/my-cv.pdf" target="_blank"><i
-                    class="fa fa-file"></i>Download CV</a>
-        </div><!--//container-->
-    </header><!--//header-->
-
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>👋 Hello! I'm Nitta Ranjan Sarker. <br>
-                                I am a multifaceted software engineer with extensive experience in app development,
-                                proficient in both
-                                front-end and back-end technologies. My skills are further enhanced by a certification
-                                in UI/UX Design,
-                                enabling me to craft intuitive and visually engaging interfaces. I excel in
-                                collaborative settings, constantly
-                                seeking new challenges, eager to work with diverse teams, and passionate about exploring
-                                innovative
-                                solutions in the tech industry.
-                                <br>
-
-
-                            <h4>🚀Key Skills:</h4>
-                            <br>
-                            <b>UI/UX Design:</b> Certified and experienced in creating intuitive and visually
-                            appealing user interfaces.
-                            <br>
-                            <b>Programming Languages: </b> <br>
-                            <ul>
-
-                                <li>Proficient: Dart, C, Java</li>
-                                <li>Basic Knowledge: PHP, Python, C++</li>
-                            </ul>
-                            <br>
-                            <b>Mobile Development: </b> Flutter <br>
-                            <b>Web Development:</b> HTML, CSS, WordPress <br>
-                            <b>Backend & Database:</b>
-                            <ul>
-                                <li> Proficient: Firebase</li>
-                                <li>Basic Knowledge: MySQL</li>
-                            </ul>
-                            <br>
-                            <h4>Experience Highlights:</h4>
-
-                            <b>Flutter Developer Internship at Repair Duniya</b>
-                            <br>
-                            <ul>
-                                <li>Successfully completed a comprehensive internship, enhancing expertise in Flutter
-                                    development and contributing to real-world projects.</li>
-                            </ul>
-                            <br>
-                            Passion & Commitment:
-                            <br>
-                            🌟 I am dedicated to staying ahead in the ever-evolving tech landscape, keeping up with
-                            the latest trends, and delivering high-quality solutions that meet user needs.
-                            </p>
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Flutter Projects</h2>
-                        <div class="content">
-                            <hr class="divider" />
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="https://github.com/nitta02?tab=repositories" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/Chattiee.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02/Chattiee"
-                                            target="_blank">Social Media Chatting
-                                            APP</a></h3>
-                                    <p class="summary">📰📱 Chattiee 📱📰
-                                        <br>
-                                        Introducing a sleek and efficient Flutter Chatting App -"Chattiee" built with
-                                        the power of Firebase! <br>
-                                        <br>
-                                        Experience seamless and effortless navigation—all thanks to
-                                        Firebase🚀📝.
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/nitta02?tab=repositories"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="https://github.com/nitta02?tab=repositories" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-1.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02/News-App" target="_blank">NEWS
-                                            APP</a></h3>
-                                    <p class="summary">📰📱 Flutter News App 📱📰
-                                        <br>
-                                        Introducing a sleek and efficient Flutter News App built with the power of GetX
-                                        State Management System! <br>
-                                        With a smooth and intuitive user interface, navigating through news categories
-                                        becomes a breeze. Whether it's breaking news or in-depth analysis, this app
-                                        delivers content with speed and precision. <br>
-                                        Experience seamless state management and effortless navigation—all thanks to
-                                        GetX🚀📝.
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/nitta02?tab=repositories"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/"
-                                    target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-4.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02?tab=repositories"
-                                            target="_blank">SOCIAL MEDIA APP - </a></h3>
-                                    <p class="summary">
-                                        💬📱 Connect & Chat with Ease! 📱💬<br>
-
-                                        Introducing our innovative social media chatting app built with Flutter &
-                                        Firebase! 🔥🚀 <br>
-                                        Stay connected with friends, family, and colleagues effortlessly. <br>
-                                        Share moments, exchange ideas, and engage in lively conversations anytime,
-                                        anywhere! 💫✨ <br>
-                                        Experience the power of Flutter's beautiful UI and Firebase's robust backend
-                                        infrastructure\🌐👥
-                                    </p>
-                                    <p><a class="more-link" href="hhttps://github.com/nitta02/Messinter-Chatting-App"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div>
-                            <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="https://github.com/nitta02?tab=repositories" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-3.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02/Quiz-App" target="_blank">QUIZ
-                                            APP</a></h3>
-                                    <p class="summary">
-                                        🧠📝 Explore and Learn with Our Quiz App! 📝🧠 <br>
-
-                                        Dive into a world of knowledge with our delightful quiz app, powered by a
-                                        dynamic API! 🌐📲 <br>
-                                        Test your intellect and have fun while doing it.Challenge yourself or compete
-                                        with friends for the highest score! 🏆🤔
-                                        Start your journey of discovery today! 🚀🔍
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/nitta02/Grocery-App"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="https://github.com/nitta02?tab=repositories" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/mockups/quotes.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02?tab=repositories"
-                                            target="_blank">Quotes App</a></h3>
-                                    <p class="summary">
-                                        📝✨ Dive into a World of Quotes! ✨📝
-                                        <br>
-                                        Our project offers a diverse collection of quotes for every mood and occasion.
-                                        <br>
-                                        Powered by essential packages like `cupertino_icons`, `get`, `iconly`,
-                                        `velocity_x`, `http`, `shimmer`, `get_storage`, and `liquid_pull_to_refresh`,
-                                        accessing inspiration has never been easier. <br>
-                                        Experience seamless browsing and refreshing with liquid pull-to-refresh, while
-                                        shimmer adds a touch of elegance to your journey.🌟📱
-                                    </p>
-
-                                    <p><a class="more-link" href="https://github.com/nitta02/Quotties_app"
-                                            target="_blank"><i class="fa fa-external-link"></i> Check out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Web Projects</h2>
-                        <div class="content">
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/nitta02/E-Code-Learning"
-                                    target="_blank">
-                                    <!-- <img class="img-responsive project-image" src="assets/images/projects/project-1.png"
-                                        alt="project name" /> -->
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/nitta02/E-Code-Learning"
-                                            target="_blank">E-Code Learning</a></h3>
-
-                                    <p><a class="more-link" href="https://github.com/nitta02/E-Code-Learning"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12"
-                                    href="https://github.com/nitta02?tab=repositories" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/mockups/robotics lab.png"
-                                        alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a
-                                            href="https://github.com/nittoranjansarkertanmoy02?tab=repositories"
-                                            target="_blank">Daffodil Robotics Lab Website</a></h3>
-                                            <p class="summary">
-                                                📝✨I developed the front-end for Daffodil Robotics Lab's website, focusing on responsive design and user-friendly navigation. 
-                                                The project involved implementing modern UI/UX practices to create a visually appealing and functional interface that enhances user interaction with the lab's research and innovations🌟📱
-                                            </p>
-                                    <p><a class="more-link" href="https://github.com/nitta02?tab=repositories"
-                                            target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-
-                <!----------------- This Section is for showing my UI Projects-------------------------------  -->
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projects UI</h2>
-                
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="#">WhatsApp UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p><a class="more-link" href="https://github.com/nitta02?tab=repositories" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="#">Fitness App UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">💪🏋️‍♂️ Explore Our Dynamic Fitness App UI Design! 🏋️‍♀️💪</p>
-                                <img class="img-responsive project-image" src="assets/images/mockups/fitness.png" alt="project name" style="width: 150px;" />
-                               
-                                <p><a class="more-link" href="https://github.com/nitta02/Store-App-UI" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="#">Inspiration App UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">🌟✨ Get Inspired with Our Stunning UI Design! ✨🌟</p>
-                                <img class="img-responsive project-image" src="assets/images/mockups/inspirational app ui.png" alt="project name" style="width: 150px;" />
-                                <p><a class="more-link" href="https://github.com/nitta02/Inspiration_App_UI" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="#">Store App UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">🛍️💫 Explore Our Chic Store App UI Design! 💫🛍️</p>
-                                <img class="img-responsive project-image" src="assets/images/mockups/store app.png" alt="project name" style="width: 150px;" />
-                                <p><a class="more-link" href="https://github.com/nitta02/Store-App-UI" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="#">Educational App UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">A modern and user-friendly UI designed to enhance the learning experience.</p>
-                                <img class="img-responsive project-image" src="assets/images/mockups/educational.png" alt="project name" style="width: 150px;" />
-                                <p><a class="more-link" href="https://github.com/nitta02?tab=repositories" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <div class="item">
-                                <h3 class="title"><a href="#">Unsplash Image Scrolling App UI</a> <span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">An elegant image browsing experience powered by the Unsplash API.</p>
-                                <img class="img-responsive project-image" src="assets/images/mockups/unplash.png" alt="project name" style="width: 150px;" />
-                                <p><a class="more-link" href="https://github.com/nitta02?tab=repositories" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
-                            </div><!--//item-->
-                
-                            <a class="btn btn-cta-secondary" href="#">More on GitHub<i class="fa fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </section>
-                
-
-
-
-                <!-- --------------------------------Experience Section-------------------- -->
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">EXPERIENCES</h2>
-
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">
-                                    Flutter Developer - Internship<br>
-                                    <span class="place"><a href="#">Repair Duniya</a></span>
-                                    <span class="year">(April 2024 - July 2024)</span>
-                                </h3>
-                                <p><strong>Position:</strong> Flutter Developer Intern<br>
-                                    <strong>Location:</strong> Andhra Pradesh, India (Remote)<br>
-                                    <strong>Company:</strong> Repair Duniya is an Indian service company where I
-                                    completed my internship as a Flutter Developer. My key contributions include:
-                                </p>
-                                <ul>
-                                    <li><strong>UI Design:</strong> Crafted the user interface for the Repair Duniya
-                                        E-commerce platform, ensuring a seamless and intuitive user experience.</li>
-                                    <li><strong>App Development:</strong> Led the development of the Repair Duniya
-                                        E-Commerce App, focusing on delivering a robust and scalable application.</li>
-                                    <li><strong>Customer App Enhancement:</strong> Developed a rating UI for the
-                                        customer app, enhancing user interaction and feedback mechanisms.</li>
-                                    <li><strong>Automation with Excel and Apps Scripts:</strong> Implemented solutions
-                                        using Excel and Apps Scripts to optimize internal processes.</li>
-                                </ul>
-                                <a href="docs/certificate.pdf" class="btn btn-cta-primary pull-right">Show
-                                    Certificate</a>
-                                <a href="https://www.repairsduniya.in/" class="btn btn-secondary">Check out</a>
-                            </div><!--//item-->
-                        </div><!--//content-->
-
-
-                    </div><!--//section-inner-->
-                </section>
-            </div>
-
-            <!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-
-                            <div class="skillset">
-                                <div class="item">
-                                    <h3 class="level-title">UI&UX Design<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to add more info...">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Dart &amp; Flutter<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to add more info...">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">C<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Html,Css, Javascript<span
-                                            class="level-label">Intermediate</span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-                                <div class="item">
-                                    <h3 class="level-title">Wordpress<span class="level-label">Intermediate</span>
-                                    </h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label">Basic</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="25%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">Php<span class="level-label">Basic</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="25%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-
-                                <p><a class="more-link" href="https://github.com/nitta02"><i
-                                            class="fa fa-external-link"></i> More on
-                                        GitHub</a></p>
-                            </div>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <!-- --------------UI&UX SECTION+++++++++++++++++++++++++++ -->
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">UI&UX Design Projects</h2>
-                        <p>Check out my Latest Projects
-                            <a href="https://www.behance.net/nittarsarker02" target="_blank"> <br> Check out
-                        </p></a>
-                        <div id="rss-feeds" class="content">
-
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- ====================Education Section--------------------------- -->
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Software Engineering</h3>
-                                <h4 class="university">Daffodil International University<span
-                                        class="year">(2020-2023)</span>
-                                </h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"> </i> HSC</h3>
-                                <h4 class="university">Gazipur Cantonment College<span class="year">(2016-2018)</span>
-                                </h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"> </i> SSC</h3>
-                                <h4 class="university">B.A.R.I. High School<span class="year">(2014-2016)</span>
-                                </h4>
-                            </div><!--//item-->
-                        </div>
-                    </div>
-                </aside>
-                <!-- ======================Language=========================== -->
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Bengali:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs" /></span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs" />
-
-                                    </span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><strong>Hindi:</strong></span>
-                                    <span class="level">Conversational <br class="visible-sm visible-xs" />
-
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-
-
-
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>Check out my Latest Medium Posts<a href="https://medium.com/@nitta_ranjan"
-                                target="_blank"><br> Check out</p>
-                        <div id="rss-feeds" class="content">
-
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="http://getbootstrap.com/" target="_blank"><i
-                                            class="fa fa-external-link"></i> Bootstrap 3.2</a></li>
-
-                            </ul>
-
-                            <hr />
-                            <p>We will improve or add new features to this template based on users' feedback so follow
-                                us on twitter to get notified when a new version is out!</p>
-                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes"
-                                target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
-                        </div>
-                    </div>
-                </aside> -->
-
-            </div><!--//secondary-->
-        </div><!--//row-->
-    </div><!--//masonry-->
-
-    <!-- *==============================*****FOOTER**=========================**** -->
-    <footer class="footer">
-        <!-- <div class="container text-center">
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a
-                    href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
-        </div> -->
-    </footer>
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript"
-        src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript"
-        src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <div class="welcome">Welcome to My Portfolio</div>
+    <div class="construction">Currently Under Construction...</div>
+    <div class="social-links">
+        <a href="https://www.behance.net/yourprofile" target="_blank"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://dribbble.com/yourprofile" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
 </body>
-
 </html>
