@@ -1,74 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Under Construction</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: #0d1117;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .welcome {
-            font-size: 3rem;
-            font-weight: 600;
-            animation: slideIn 1.5s ease-out;
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        .construction {
-            font-size: 1.5rem;
-            margin-top: 20px;
-            opacity: 0;
-            animation: fadeBlink 2s infinite alternate;
-        }
-
-        @keyframes fadeBlink {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        .social-links {
-            margin-top: 30px;
-            display: flex;
-            gap: 20px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.8rem;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            transform: scale(1.2);
-            color: #00e6e6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta name="description" content="Tanmoy Vision is a product designer and front-end craftsman turning complicated problems into calm digital tools.">
+  <title>Tanmoy Vision — Product Designer &amp; Front-end Craftsman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
-    <div class="welcome">Welcome to My Portfolio</div>
-    <div class="construction">Currently Under Construction...</div>
-    <div class="social-links">
-        <a href="https://www.behance.net/nittarsarker02" target="_blank"><i class="fa-brands fa-behance"></i></a>
-        <a href="https://dribbble.com/tanmoy2" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-        <a href="https://x.com/tanmoyvision" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://github.com/nitta02" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Tanmoy Vision home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">TANMOY VISION</span>
+        <span class="availability">AVAILABLE FOR HIRE</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Featured Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a class="social-icon" href="https://www.linkedin.com/" aria-label="LinkedIn profile"><img src="assets/figma/linkedin.svg" alt=""></a>
+        <a class="talk-button" href="#contact">Let's Talk <img src="assets/figma/arrow-up-right.svg" alt=""></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home" class="page-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <a class="avatar-ring" href="#about" aria-label="Learn about Tanmoy"><img src="assets/figma/tanmoy-portrait.png" alt="Tanmoy Sarker"></a>
+      <h1 id="hero-title">I design software that<br>of your way <span class="highlight">gets out</span></h1>
+      <p class="hero-copy">Combining thoughtful UX architecture, expressive interfaces, and clean front-end code to transform messy problems into calm digital tools.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">Explore Works <img class="button-arrow" src="assets/figma/arrow-down-large.svg" alt=""></a>
+        <a class="button button-dark" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <div class="about-card">
+        <figure class="portrait-frame">
+          <img src="assets/figma/tanmoy-portrait.png" alt="Tanmoy in the wild">
+          <figcaption>Tanmoy in the wild</figcaption>
+        </figure>
+        <div class="about-copy">
+          <p class="about-quote" id="about-title">“I'm a product designer who gets a little too excited about making complicated things feel simple. I care about the small details, the edge cases everyone forgets, and shipping work that genuinely makes someone's day easier.”</p>
+          <div class="craft-list">
+            <p class="eyebrow muted">Core Craft &amp; Disciplines</p>
+            <div class="chip-list">
+              <span>User Research</span><span>Prototyping</span><span>Motion &amp; UI</span>
+              <span>Framer &amp; Frontend</span><span>Interaction Design</span>
+            </div>
+          </div>
+        </div>
+        <figure class="portrait-frame portrait-frame-accent">
+          <img src="assets/figma/tanmoy-social.png" alt="Tanmoy, product designer and creative technologist">
+          <figcaption>My workspace</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" class="work-section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-title">FEATURED WORKS</h2>
+        <p class="section-copy">Here are a few products I had the chance to work on, making them way simpler, smoother, and just easier for people to trust and enjoy using.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <span class="project-tab">✦ PROJECT 01</span>
+          <div class="project-inner">
+            <div class="project-info">
+              <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
+              <h3>AgroHome</h3>
+              <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
+              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
+            </div>
+            <div class="project-art"><img src="assets/figma/agrohome-preview.png" alt="AgroHome website design preview"></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tab">✦ PROJECT 02</span>
+          <div class="project-inner">
+            <div class="project-info">
+              <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
+              <h3>Smiloraa</h3>
+              <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
+              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
+            </div>
+            <div class="project-art"><img src="assets/figma/smiloraa-preview.png" alt="Smiloraa orthodontics website design preview"></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tab">✦ PROJECT 03</span>
+          <div class="project-inner">
+            <div class="project-info">
+              <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
+              <h3>Elegant Fashion</h3>
+              <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
+              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
+            </div>
+            <div class="project-art"><img src="assets/figma/elegant-fashion-preview.png" alt="Elegant Fashion ecommerce website design preview"></div>
+          </div>
+        </article>
+      </div>
+      <div class="all-work-wrap"><a class="button button-primary" href="#work">Explore All 6 Case Studies <img class="button-arrow" src="assets/figma/arrow-down-large.svg" alt=""></a></div>
+    </section>
+
+    <section class="process-section" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="eyebrow">thoughtful at every step</p>
+        <h2 id="process-title">HOW I WORK</h2>
+        <p class="section-copy">Here are a few products I had the chance to work on, making them way simpler, smoother, and just easier for people to trust and enjoy using.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-card"><p class="eyebrow">STEP 01</p><h3>Discover &amp; Map</h3><p>Unpacking business goals, listening to real users, identifying true blockers, and sketching initial user flows.</p></article>
+        <article class="process-card"><p class="eyebrow">STEP 02</p><h3>Wire &amp; Test</h3><p>Validating low-fidelity prototypes early to catch flaws before investing hours into visual polish.</p></article>
+        <article class="process-card"><p class="eyebrow">STEP 03</p><h3>Visual Polish</h3><p>Crafting tactile, distinct aesthetics, consistent tokenized design systems, and interactive micro-animations.</p></article>
+        <article class="process-card"><p class="eyebrow">STEP 04</p><h3>Build &amp; Ship</h3><p>Bringing designs to reality in clean responsive code, ensuring performance and resilience across all screens.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="availability-note"><span></span><div><strong>TANMOY VISION</strong><p>Open to contract work, full-time roles, &amp; design sprint advisory.</p></div></div>
+      <div class="contact-card">
+        <div class="smile-icon"><img src="assets/figma/smiley.svg" alt=""></div>
+        <p class="eyebrow">let's make something together</p>
+        <h2 id="contact-title">CONTACT</h2>
+        <p class="contact-copy">Got a project, a hard problem, or just want to say hi? Send it over. I read every message.</p>
+        <a class="button button-primary" href="mailto:nittaranjantanmoy23@gmail.com">Drop a Line <img class="button-arrow" src="assets/figma/arrow-down-large.svg" alt=""></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">TANMOY VISION <small>PRODUCT DESIGNER &amp; FRONT-END CRAFTSMAN</small></a>
+    <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#work">Case Studies</a><a href="#contact">Contact</a></nav>
+    <div class="footer-social"><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://github.com/nitta02" aria-label="GitHub">git</a></div>
+    <p class="copyright">© 2026 TANMOY VISION. Built with care.</p>
+  </footer>
 </body>
 </html>
