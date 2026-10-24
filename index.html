@@ -31,6 +31,8 @@
     </nav>
   </header>
 
+  <div class="banner-space" aria-hidden="true"></div>
+
   <main id="home" class="page-content">
     <section class="hero" aria-labelledby="hero-title">
       <a class="avatar-ring" href="about.html" aria-label="Learn about Tanmoy"><img src="assets/figma/tanmoy-portrait.png" alt="Tanmoy Sarker"></a>
@@ -43,6 +45,7 @@
     </section>
 
     <section id="about" class="about-section" aria-labelledby="about-title">
+      <p class="eyebrow about-kicker">about me</p>
       <div class="about-card">
         <figure class="portrait-frame">
           <img src="assets/figma/tanmoy-portrait.png" alt="Tanmoy in the wild">
@@ -67,7 +70,7 @@
 
     <section id="work" class="work-section" aria-labelledby="work-title">
       <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
+        <p class="eyebrow">Explore my work</p>
         <h2 id="work-title">FEATURED WORKS</h2>
         <p class="section-copy">Here are a few products I had the chance to work on, making them way simpler, smoother, and just easier for people to trust and enjoy using.</p>
       </div>
@@ -80,7 +83,7 @@
               <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
               <h3>AgroHome</h3>
               <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
-              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="case-action"><a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-down-large.svg" alt=""></a></div>
               <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
             </div>
             <div class="project-art"><img src="assets/figma/agrohome-preview.png" alt="AgroHome website design preview"></div>
@@ -94,7 +97,7 @@
               <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
               <h3>Smiloraa</h3>
               <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
-              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="case-action"><a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-down-large.svg" alt=""></a></div>
               <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
             </div>
             <div class="project-art"><img src="assets/figma/smiloraa-preview.png" alt="Smiloraa orthodontics website design preview"></div>
@@ -108,7 +111,7 @@
               <p class="project-meta"><span></span> MAR 10, 2026 · MOBILITY</p>
               <h3>Elegant Fashion</h3>
               <p class="project-description">Making a whole city's complex transit network and delayed schedule updates feel less like decoding a cryptic puzzle.</p>
-              <a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-right-large.svg" alt=""></a>
+              <div class="case-action"><a class="case-link" href="#contact">View Project Case Study <img src="assets/figma/arrow-down-large.svg" alt=""></a></div>
               <div class="tag-list"><span>MOBILITY</span><span>CONSUMER APP</span><span>DESIGN SYSTEM</span></div>
             </div>
             <div class="project-art"><img src="assets/figma/elegant-fashion-preview.png" alt="Elegant Fashion ecommerce website design preview"></div>
@@ -144,11 +147,22 @@
     </section>
   </main>
 
+  <div class="page-view-switcher" aria-label="Page view switcher">
+    <a class="active" href="#home" aria-current="page">Home</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
   <footer class="site-footer">
-    <a class="footer-brand" href="#home">TANMOY VISION <small>PRODUCT DESIGNER &amp; FRONT-END CRAFTSMAN</small></a>
-    <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="about.html">About</a><a href="work.html">Case Studies</a><a href="contact.html">Contact</a></nav>
-    <div class="footer-social"><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://github.com/nitta02" aria-label="GitHub">git</a></div>
-    <p class="copyright">© 2026 TANMOY VISION. Built with care.</p>
+    <div class="footer-inner">
+      <a class="footer-brand" href="#home">TANMOY VISION <small><span aria-hidden="true"></span>PRODUCT DESIGNER &amp; FRONT-END CRAFTSMAN</small></a>
+      <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="about.html">About</a><a href="work.html">Case Studies</a><a href="contact.html">Contact</a></nav>
+      <div class="footer-meta">
+        <div class="footer-social"><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a><a href="https://github.com/nitta02" aria-label="GitHub">git</a></div>
+        <p class="copyright">© 2026 TANMOY VISION. Built with care.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
