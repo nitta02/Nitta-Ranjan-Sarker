@@ -339,3 +339,96 @@ img { display: block; max-width: 100%; }
   .site-footer nav a { font-size: 10px; line-height: 16px; }
   .footer-meta { align-items: flex-start; }
 }
+/* Figma mobile homepage (375px frame) */
+.menu-toggle { display: none; }
+@media (max-width: 600px) {
+  .site-header { padding: 10px 16px; }
+  .nav-shell { min-height: 46px; padding: 10px 20px; gap: 8px; }
+  .availability, .nav-links, .nav-actions { display: none; }
+  .brand-name { font-size: 14px; }
+  .brand-dot { width: 10px; height: 10px; flex-basis: 10px; }
+  .menu-toggle { width: 24px; height: 24px; padding: 3px 1px; display: flex; flex-direction: column; justify-content: space-between; border: 0; background: transparent; cursor: pointer; }
+  .menu-toggle span { width: 22px; height: 2px; display: block; border-radius: 2px; background: #f4f2ee; }
+  .nav-shell { position: relative; }
+  .nav-links.is-open { position: absolute; z-index: 5; top: calc(100% + 8px); left: 0; right: 0; padding: 16px 20px; display: flex; align-items: flex-start; flex-direction: column; gap: 16px; border: 1px solid #27282c; border-radius: 16px; background: #1a1a1a; }
+  .banner-space { display: none; }
+  .page-content { width: calc(100% - 48px); }
+  .hero { min-height: 0; padding: 40px 0; }
+  .avatar-ring { width: 48px; height: 48px; padding: 2px; }
+  .hero h1 { width: 100%; margin: 0; padding: 0; font-size: 48px; line-height: 48px; letter-spacing: -2px; }
+  .highlight { width: max-content; margin: 16px auto 0; padding: 1px 9px 16px; display: block; border-radius: 6px; }
+  .hero-copy { max-width: 327px; margin: 24px 0 0; font-size: 16px; line-height: 24px; }
+  .hero-actions { width: 170px; padding: 20px 0; flex-direction: column; gap: 16px; }
+  .hero-actions .button { width: 170px; min-height: 44px; padding: 12px 14px; gap: 8px; border-radius: 6px; font-size: 14px; line-height: 20px; letter-spacing: 0; }
+
+  .about-section { padding: 40px 0; }
+  .about-kicker { height: 20px; margin: 0 auto 24px; font-size: 14px; line-height: 20px; }
+  .about-card { width: 100%; margin: 0; padding: 16px 1px; grid-template-columns: minmax(0, 1fr); gap: 16px; border-radius: 12px; }
+  .portrait-frame, .portrait-frame-accent { width: 100%; height: 349px; padding: 12px 12px 19px; display: block; }
+  .portrait-frame img { height: 284.5px; border-radius: 8px; }
+  .portrait-frame figcaption { height: 32px; padding-top: 12px; font-size: 12px; line-height: 18px; }
+  .about-copy { gap: 24px; }
+  .about-quote { font-size: 16px; line-height: 24px; }
+  .craft-list { padding-top: 8px; }
+  .craft-list > .eyebrow { text-align: center; font-size: 12px; }
+  .chip-list { margin-top: 12px; display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
+  .chip-list span { min-height: 32px; padding: 6px 12px; font-size: 12px; line-height: 18px; }
+
+  .work-section { padding: 40px 0; }
+  .section-heading { width: 100%; }
+  .section-heading .eyebrow { font-size: 14px; line-height: 20px; }
+  .section-heading h2 { margin: 12px 0 0; font-size: 40px; line-height: 40px; letter-spacing: -2px; }
+  .section-copy { max-width: 327px; margin: 0 auto; padding-top: 24px; font-size: 16px; line-height: 24px; }
+  .project-list { padding-top: 56px; gap: 72px; }
+  .project-card { width: calc(100% + 8px); padding: 0; }
+  .project-tab { height: 35px; margin-left: 12px; padding: 6px 12px; font-size: 12px; line-height: 22px; }
+  .project-inner { min-height: 0; padding: 20px; grid-template-columns: minmax(0, 1fr); gap: 40px; border-radius: 16px; }
+  .project-info { height: auto; gap: 12px; }
+  .project-meta { margin: 0; font-size: 10px; line-height: 18px; }
+  .project-info h3 { font-size: 32px; line-height: 36px; letter-spacing: -1px; }
+  .project-description { margin: 0; font-size: 12px; line-height: 20px; }
+  .case-action { height: auto; padding-top: 4px; }
+  .case-link { min-height: 44px; height: auto; padding: 12px 18px; display: inline-flex; align-items: center; gap: 6px; border-radius: 6px; font-size: 14px; line-height: 20px; white-space: nowrap; }
+  .case-link img { width: 20px; height: 16px; }
+  .tag-list { min-height: 0; margin: 0; padding-top: 8px; gap: 8px; }
+  .tag-list span { padding: 4px 10px; font-size: 10px; line-height: 18px; }
+  .project-art { width: 100%; height: 300px; padding: 12px; aspect-ratio: auto; }
+  .project-art img { height: 100%; object-fit: cover; }
+  .all-work-wrap { padding-top: 40px; }
+
+  .process-section { padding: 40px 0; }
+  .process-section .section-heading .eyebrow { height: 24px; line-height: 24px; }
+  .process-section .section-heading h2 { height: 52px; margin: 0; padding-top: 12px; font-size: 40px; line-height: 40px; letter-spacing: -2px; }
+  .process-section .section-copy { margin: 0 auto; padding-top: 24px; }
+  .process-grid { margin: 0; padding-top: 40px; grid-template-columns: 1fr; gap: 20px; }
+  .process-card { min-height: 218px; padding: 40px 20px; }
+  .process-card:nth-child(2) { min-height: 198px; }
+  .process-card h3 { margin: 0; font-size: 30px; line-height: 38px; letter-spacing: -2px; }
+  .process-card > p:last-child { font-size: 16px; line-height: 22px; }
+  .process-card .eyebrow { font-size: 12px; line-height: 18px; }
+  .process-card h3 { margin: 0; font-size: 30px; line-height: 38px; letter-spacing: -2px; }
+  .process-card > p:last-child { font-size: 16px; line-height: 22px; }
+
+  .contact-section { padding: 40px 0; }
+  .contact-card { margin-top: 40px; padding: 40px 20px; border-radius: 20px; }
+  .smile-icon { width: 72px; height: 72px; }
+  .contact-card > .eyebrow { margin-top: 24px; font-size: 14px; line-height: 22px; }
+  .contact-card h2 { margin-top: 8px; font-size: 48px; line-height: 52px; letter-spacing: -2px; }
+  .contact-copy { margin-top: 16px; font-size: 16px; line-height: 24px; }
+  .contact-card .button { min-height: 44px; margin-top: 24px; padding: 12px 18px; font-size: 14px; line-height: 20px; }
+  .availability-note { top: 8px; left: 0; width: 230px; padding: 12px 16px; }
+  .availability-note strong { font-size: 14px; }
+  .availability-note p { font-size: 12px; line-height: 18px; }
+
+  .page-view-switcher { margin: 40px auto; }
+  .page-view-switcher a { padding: 6px 10px; font-size: 11px; }
+  .site-footer { min-height: 457px; padding: 88px 24px 48px; }
+  .footer-inner { width: 100%; min-height: 320px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 32px; }
+  .footer-brand { width: 277px; font-size: 16px; line-height: 24px; }
+  .footer-brand small { padding-top: 0; font-size: 12px; line-height: 18px; }
+  .footer-brand small span { width: 8px; height: 8px; flex-basis: 8px; }
+  .site-footer nav { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .site-footer nav a { font-size: 14px; line-height: 20px; }
+  .footer-meta { align-items: flex-start; gap: 12px; }
+  .copyright { font-size: 12px; line-height: 18px; white-space: normal; }
+}

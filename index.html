@@ -28,6 +28,9 @@
         <a class="social-icon" href="https://www.linkedin.com/" aria-label="LinkedIn profile"><img src="assets/figma/linkedin.svg" alt=""></a>
         <a class="talk-button" href="contact.html">Let's Talk <img src="assets/figma/arrow-up-right.svg" alt=""></a>
       </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
@@ -164,5 +167,15 @@
       </div>
     </div>
   </footer>
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const menuLinks = document.querySelector(".nav-links");
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+      menuLinks.classList.toggle("is-open", !isOpen);
+    });
+  </script>
 </body>
 </html>
